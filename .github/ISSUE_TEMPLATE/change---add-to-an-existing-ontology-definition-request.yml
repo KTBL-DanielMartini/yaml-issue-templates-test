@@ -1,0 +1,31 @@
+name: change / add to an existing ontology definition request
+description: Request an existing definition to be changed, for example adding missing labels, hooking up in a hierarchy etc.
+body:
+  - type: textarea
+    attributes:
+      label: Motivation, Use Case or User Story
+      description: "Please describe the motivation for suggesting the addition. A description in the style of a use case or user story would be helpful, for example: a data provider wants to provide information on X because..., a service consumer needs information on Y because..., and so on. You can use markdown to structure your input. If possible, provide links and references to external resources or documents that illustrate your point."
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Name of property or class to be modified
+      description: "The name should suffice. But you can also give the full IRI."
+  - type: checkboxes
+    attributes:
+      label: What should be added?
+      description: "Please check the definition properties that you would like to modify/add"
+      options:
+        - label: rdf:type
+        - label: rdfs:label
+        - label: rdfs:comment
+        - label: skos:definition
+        - label: dct:description
+        - label: rdfs:subClassOf
+        - label: rdfs:domain
+        - label: rdfs:range
+        - label: rdfs:subPropertyOf
+  - type: textarea
+    attributes:
+      label: Detailed Description
+      description: "Provide a more detailed description of what you want to change/add, for example the values that you would like to have for the property."
