@@ -32,7 +32,7 @@ body:
     attributes:
       label: Range
       description: "If known, indicate the value range of the property. It can point to either a basic datatype (for Datatype Properties, see http://www.w3.org/TR/xmlschema11-2/#built-in-datatypes for potential values) or a class (for Object Properties). This will go into the rdfs:range property of the property definition."
-  - type input
+  - type: input
     attributes:
       label: Domain
       description: "Specify the Class of individuals, for which these property is valid. This will go into the rdfs:domain property of the property definition."
