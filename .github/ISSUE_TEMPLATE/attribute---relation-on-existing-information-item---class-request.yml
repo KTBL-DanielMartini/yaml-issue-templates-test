@@ -36,5 +36,3 @@ body:
     attributes:
       label: Domain
       description: "Specify the Class of individuals, for which these property is valid. This will go into the rdfs:domain property of the property definition."
-
-

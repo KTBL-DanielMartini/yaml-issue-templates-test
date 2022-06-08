@@ -1,0 +1,42 @@
+name: complex information item / class request
+description: Request a complex information model - i. e. a class - to be added to the ontology
+labels: [class]
+body:
+  - type: textarea
+    attributes:
+      label: Motivation, Use Case or User Story
+      description: "Please describe the motivation for suggesting the class. A description in the style of a use case or user story would be helpful, for example: a data provider wants to provide information on X because..., a service consumer needs information on Y because..., and so on. You can use markdown to structure your input. If possible, provide links and references to external resources or documents that illustrate your point."
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Proposed Name
+      description: "You can propose a name for the class that you request. It should not collide with a name already existing in our namespace. We use UpperCamelCase for class names. This will form the last component of the IRI identifying the class."
+  - type: input
+    attributes:
+      label: Label
+      description: "Provide a short label that might for example be displayed in a user interface for a class navigator or as a title for a data entry form for that class. This will go into the rdfs:label property of the property definition."
+  - type: textarea
+    attributes:
+      label: Definition
+      description: "Provide a short definition/description of the class and eventually some usage hints that you think would help a developer to grasp its meaning quickly. This will - depending on content - go into the skos:definition/dct:description/rdfs:comment property of the class definition."
+  - type: input
+    attributes:
+      label: Superclass
+      description: "Indicate the most important superclass for the class created. Any class going into the ontology should be derived from an existing class. You can also refer to classes of existing, external ontologies. Please provide a full class IRI. If multiple inheritance is required, you can provide further classes in the additional notes field below."
+  - type: textarea
+    attributes:
+      label: Further Information
+      description: "You can provide further comments here, for example:"
+      value: |
+      # Properties having that class as domain
+
+      - A
+      - B
+
+      # Properties having that class as range
+
+      - X
+      - Y
+
+      # Additional Superclasses 
