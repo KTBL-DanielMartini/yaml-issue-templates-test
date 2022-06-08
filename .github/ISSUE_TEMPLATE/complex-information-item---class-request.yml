@@ -29,14 +29,14 @@ body:
       label: Further Information
       description: "You can provide further comments here, for example:"
       value: |
-      "# Properties having that class as domain
+        # Properties having that class as domain
 
-      - A
-      - B
+        - A
+        - B
 
-      # Properties having that class as range
+        # Properties having that class as range
 
-      - X
-      - Y
+        - X
+        - Y
 
-      # Additional Superclasses"
+        # Additional Superclasses
