@@ -13,7 +13,7 @@ body:
       description: "The name should suffice. But you can also give the full IRI."
   - type: checkboxes
     attributes:
-      label: What should be added?
+      label: What should be changed?
       description: "Please check the definition properties that you would like to modify/add"
       options:
         - label: rdf:type
