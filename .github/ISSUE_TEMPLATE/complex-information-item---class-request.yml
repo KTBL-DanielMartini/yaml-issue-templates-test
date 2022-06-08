@@ -29,7 +29,7 @@ body:
       label: Further Information
       description: "You can provide further comments here, for example:"
       value: |
-      # Properties having that class as domain
+      "# Properties having that class as domain
 
       - A
       - B
@@ -39,4 +39,4 @@ body:
       - X
       - Y
 
-      # Additional Superclasses 
+      # Additional Superclasses"
