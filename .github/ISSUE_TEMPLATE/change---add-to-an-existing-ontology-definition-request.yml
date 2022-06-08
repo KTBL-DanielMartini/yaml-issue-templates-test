@@ -25,8 +25,8 @@ body:
         - label: rdfs:domain
         - label: rdfs:range
         - label: rdfs:subPropertyOf
-        - label: other...
+        - label: other...(describe below)
   - type: textarea
     attributes:
       label: Detailed Description
-      description: "Provide a more detailed description of what you want to change/add, for example the values that you would like to have for the property."
+      description: "Provide a more detailed description of what you want to change/add, for example the values that you would like to have for the property. If you checked other above, you can also add more specific information here. OWL constructs are also allowed."
