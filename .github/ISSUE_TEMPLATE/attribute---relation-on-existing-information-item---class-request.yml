@@ -2,7 +2,7 @@ name: attribute / relation on existing information item / class request
 description: Request an attribute or relation i.e. an rdf:Property to be used on instances of existing classes
 labels: [property]
 body:
-  - type: markdown
+  - type: textarea
     attributes:
       label: Motivation, Use Case or User Story
       description: "Please describe the motivation for suggesting the attribute/relation. A description in the style of a use case or user story would be helpful, for example: a data provider wants to provide information X because..., a service consumer needs information Y because..., and so on. You can use markdown to structure your input. If possible, provide links and references to external resources or documents that illustrate your point."
