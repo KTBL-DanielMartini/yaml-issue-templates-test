@@ -25,6 +25,7 @@ body:
         - label: rdfs:domain
         - label: rdfs:range
         - label: rdfs:subPropertyOf
+        - label: other...
   - type: textarea
     attributes:
       label: Detailed Description
