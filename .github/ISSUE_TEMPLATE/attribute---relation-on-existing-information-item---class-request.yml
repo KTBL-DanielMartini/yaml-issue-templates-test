@@ -1,0 +1,40 @@
+name: attribute / relation on existing information item / class request
+description: Request an attribute or relation i.e. an rdf:Property to be used on instances of existing classes
+labels: [property]
+body:
+  - type: markdown
+    attributes:
+      label: Motivation, Use Case or User Story
+      description: "Please describe the motivation for suggesting the attribute/relation. A description in the style of a use case or user story would be helpful, for example: a data provider wants to provide information X because..., a service consumer needs information Y because..., and so on. You can use markdown to structure your input. If possible, provide links and references to external resources or documents that illustrate your point."
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Proposed Name
+      description: "You can propose a name for the property that you request. It should not collide with a name already existing in our namespace. We use lowerCamelCase for property names. This will form the last component of the IRI identifying the property."
+  - type: input
+    attributes:
+      label: Label
+      description: "Provide a short label that might for example be displayed in a user interface for an entry field for that property. This will go into the rdfs:label property of the property definition."
+  - type: textarea
+    attributes:
+      label: Definition
+      description: "Provide a short definition/description of the property and eventually some usage hints that you think would help a developer to grasp its meaning quickly. This will - depending on content - go into the skos:definition/dct:description/rdfs:comment property of the property definition."
+  - type: checkboxes
+    attributes:
+      label: Property Kind
+      description: "If known, indicate the type of property you want to have created. For more information see the OWL specification at http://www.w3.org/TR/owl-syntax. This will determine the rdf:type of the property." 
+      options:
+        - label: Object Property (represents a relationship between two objects/individuals)
+        - label: Datatype Property (represents an attribute referring to a literal, i.e. a basic datatype)
+        - label: Annotation Property (represents additional descriptive information to an object)
+  - type: input
+    attributes:
+      label: Range
+      description: "If known, indicate the value range of the property. It can point to either a basic datatype (for Datatype Properties, see http://www.w3.org/TR/xmlschema11-2/#built-in-datatypes for potential values) or a class (for Object Properties). This will go into the rdfs:range property of the property definition."
+  - type input
+    attributes:
+      label: Domain
+      description: "Specify the Class of individuals, for which these property is valid. This will go into the rdfs:domain property of the property definition."
+
+
